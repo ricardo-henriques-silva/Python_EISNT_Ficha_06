@@ -16,10 +16,7 @@
             {% endfor %}
         {% endif %}
     {% endwith %}
-    <form method="POST" action="{{ url_for('tesouro') }}">
-        {{ form.hidden_tag() }}
-        {{ form.mensagem() }}
-        {{ form.submit() }}
+
     </form>
 </body>
 </html>
