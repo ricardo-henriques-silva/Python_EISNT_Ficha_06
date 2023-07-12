@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Pista 2</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+    <h1>Página de Verificação de Respostas</h1>
+    <form action="/desafios" method="POST">
+        <label for="resposta1">Pergunta 1:</label>
+        <input type="text" id="resposta1" name="resposta1" required><br>
+
+        <label for="resposta2">Pergunta 2:</label>
+        <input type="text" id="resposta2" name="resposta2" required><br>
+
+        <label for="resposta3">Pergunta 3:</label>
+        <input type="text" id="resposta3" name="resposta3" required><br>
+
+        <input type="submit" value="Verificar Respostas">
+    </form>
+
+
+</body>
+</html>

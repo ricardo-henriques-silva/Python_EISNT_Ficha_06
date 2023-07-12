@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Caça ao Tesouro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+    <h1>Bem-vindo</h1>
+
+
+
+
+
+
+    <p>apresenta o propósito do teu website</p>
+
+
+
+    <form method="POST" action="{{ url_for('home') }}">
+        {{ form.hidden_tag() }}
+        {{ form.submit() }}
+    </form>
+    </body>
+    </html>
